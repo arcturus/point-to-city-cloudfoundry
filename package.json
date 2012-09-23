@@ -1,0 +1,8 @@
+{
+ "name":"point-to-city-cloudfoundry",
+  "version":"0.0.1",
+  "dependencies":{
+    "express":"",
+    "point-to-city":"0.0.2"  
+  }
+}
