@@ -11,7 +11,9 @@ app.get('/', function(req, res) {
 	return;
   }
 
-  var query = ptc.init('[yourappidhere]');
+  var locale = req.query['locale'] || null;
+  var query = ptc.init('[yourappidhere]', locale);
+
   var method = query.point_to_city;
   if (req.query['full']) {
     method = query.yahoo_where;
